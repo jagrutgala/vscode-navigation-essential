@@ -17,6 +17,7 @@ import {
   selectAngleBracketsCommand,
   selectInTagCommand,
 } from "./quick-select/commands/commands";
+import { quickOpenPrefillCommand } from "./quick-open-prefill/commands/commands";
 
 // This method is called when your extension is activated
 // Your extension is activated the very first time the command is executed
@@ -44,6 +45,8 @@ export function activate(context: vscode.ExtensionContext) {
   );
   registerCommandService.registerCommand("navigation-essentials.selectAngleBrackets", selectAngleBracketsCommand);
   registerCommandService.registerCommand("navigation-essentials.selectInTag", selectInTagCommand);
+
+  registerCommandService.registerCommand("navigation-essentials.quickOpenPrefill", quickOpenPrefillCommand);
 }
 
 // This method is called when your extension is deactivated

@@ -64,6 +64,10 @@
       {
         "command": "navigation-essentials.selectInTag",
         "title": "NE: Select inside tag"
+      },
+      {
+        "command": "navigation-essentials.quickOpenPrefill",
+        "title": "Open quick open prefilled with selected text"
       }
     ],
     "keybindings": [
@@ -319,6 +323,11 @@
         "command": "navigation-essentials.selectInTag",
         "key": "alt+s shift+.",
         "when": "editorFocus"
+      },
+      {
+        "command": "navigation-essentials.quickOpenPrefill",
+        "key": "ctrl+p",
+        "when": "editorTextFocus && editorHasSelection && !editorHasMultipleSelections"
       }
     ]
   },
