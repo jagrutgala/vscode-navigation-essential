@@ -2,7 +2,7 @@
   "name": "navigation-essentials",
   "displayName": "Vscode Navigation Essentials",
   "description": "",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "engines": {
     "vscode": "^1.8.0"
   },
