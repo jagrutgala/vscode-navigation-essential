@@ -19,11 +19,12 @@
         {
             "label": "Package project",
             "type": "shell",
-            "command": "vsce package -o ./dist",
+            "command": "mkdir -p ./dist; vsce package -o ./dist",
+            "dependsOn": "",
             "group": {
                 "kind": "build",
                 "isDefault": false
             }
-        }
+        },
     ]
 }
