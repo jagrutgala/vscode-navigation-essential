@@ -1,17 +1,49 @@
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
 import * as vscode from "vscode";
+import { RegisterCommandService } from "./utils/registerCommand";
+import {
+  selectDoubleQuoteCommand,
+  selectSingleQuoteCommand,
+  selectEitherQuoteCommand,
+  switchQuotesCommand,
+  selectBackTickCommand,
+  selectParenthesisCommand,
+  selectSquareBracketsCommand,
+  selectCurlyBracketsCommand,
+  selectParenthesisOuterCommand,
+  selectSquareBracketsOuterCommand,
+  selectCurlyBracketsOuterCommand,
+  selectAngleBracketsCommand,
+  selectInTagCommand,
+} from "./quick-select/commands/commands";
 
 // This method is called when your extension is activated
 // Your extension is activated the very first time the command is executed
 export function activate(context: vscode.ExtensionContext) {
   console.log('Congratulations, your extension "navigation-essential" is now active!');
 
-  let disposable = vscode.commands.registerCommand("navigation-essential.helloWorld", () => {
-    vscode.window.showInformationMessage("Hello World from navigation-essential!");
-  });
+  const registerCommandService: RegisterCommandService = new RegisterCommandService(context);
 
-  context.subscriptions.push(disposable);
+  registerCommandService.registerCommand("navigation-essentials.selectDoubleQuote", selectDoubleQuoteCommand);
+  registerCommandService.registerCommand("navigation-essentials.selectSingleQuote", selectSingleQuoteCommand);
+  registerCommandService.registerCommand("navigation-essentials.selectEitherQuote", selectEitherQuoteCommand);
+  registerCommandService.registerCommand("navigation-essentials.switchQuotes", switchQuotesCommand);
+  registerCommandService.registerCommand("navigation-essentials.selectBackTick", selectBackTickCommand);
+  registerCommandService.registerCommand("navigation-essentials.selectParenthesis", selectParenthesisCommand);
+  registerCommandService.registerCommand("navigation-essentials.selectSquareBrackets", selectSquareBracketsCommand);
+  registerCommandService.registerCommand("navigation-essentials.selectCurlyBrackets", selectCurlyBracketsCommand);
+  registerCommandService.registerCommand("navigation-essentials.selectParenthesisOuter", selectParenthesisOuterCommand);
+  registerCommandService.registerCommand(
+    "navigation-essentials.selectSquareBracketsOuter",
+    selectSquareBracketsOuterCommand
+  );
+  registerCommandService.registerCommand(
+    "navigation-essentials.selectCurlyBracketsOuter",
+    selectCurlyBracketsOuterCommand
+  );
+  registerCommandService.registerCommand("navigation-essentials.selectAngleBrackets", selectAngleBracketsCommand);
+  registerCommandService.registerCommand("navigation-essentials.selectInTag", selectInTagCommand);
 }
 
 // This method is called when your extension is deactivated

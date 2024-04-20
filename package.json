@@ -13,6 +13,125 @@
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
+      {
+        "command": "navigation-essentials.selectSingleQuote",
+        "title": "NE: Select inside single quote"
+      },
+      {
+        "command": "navigation-essentials.selectDoubleQuote",
+        "title": "NE: Select inside double quote"
+      },
+      {
+        "command": "navigation-essentials.selectEitherQuote",
+        "title": "NE: Select inside either quote"
+      },
+      {
+        "command": "navigation-essentials.switchQuotes",
+        "title": "NE: Switch quotes"
+      },
+      {
+        "command": "navigation-essentials.selectParenthesis",
+        "title": "NE: Select inside parenthesis"
+      },
+      {
+        "command": "navigation-essentials.selectBackTick",
+        "title": "NE: Select inside back ticks"
+      },
+      {
+        "command": "navigation-essentials.selectSquareBrackets",
+        "title": "NE: Select inside square brackets"
+      },
+      {
+        "command": "navigation-essentials.selectCurlyBrackets",
+        "title": "NE: Select inside curly brackets"
+      },
+      {
+        "command": "navigation-essentials.selectParenthesisOuter",
+        "title": "NE: Select outside parenthesis"
+      },
+      {
+        "command": "navigation-essentials.selectSquareBracketsOuter",
+        "title": "NE: Select outside square brackets"
+      },
+      {
+        "command": "navigation-essentials.selectCurlyBracketsOuter",
+        "title": "NE: Select outside curly brackets"
+      },
+      {
+        "command": "navigation-essentials.selectAngleBrackets",
+        "title": "NE: Select inside angled brackets"
+      },
+      {
+        "command": "navigation-essentials.selectInTag",
+        "title": "NE: Select inside tag"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "extension.selectSingleQuote",
+        "key": "alt+s '",
+        "when": "editorFocus"
+      },
+      {
+        "command": "extension.selectDoubleQuote",
+        "key": "alt+s shift+'",
+        "when": "editorFocus"
+      },
+      {
+        "command": "extension.selectEitherQuote",
+        "key": "alt+s ;",
+        "when": "editorFocus"
+      },
+      {
+        "command": "extension.switchQuotes",
+        "key": "alt+s shift+;",
+        "when": "editorFocus"
+      },
+      {
+        "command": "extension.selectParenthesis",
+        "key": "alt+s shift+9",
+        "when": "editorFocus"
+      },
+      {
+        "command": "extension.selectBackTick",
+        "key": "alt+s `",
+        "when": "editorFocus"
+      },
+      {
+        "command": "extension.selectSquareBrackets",
+        "key": "alt+s [",
+        "when": "editorFocus"
+      },
+      {
+        "command": "extension.selectCurlyBrackets",
+        "key": "alt+s shift+[",
+        "when": "editorFocus"
+      },
+      {
+        "command": "extension.selectParenthesisOuter",
+        "key": "alt+s shift+0",
+        "when": "editorFocus"
+      },
+      {
+        "command": "extension.selectSquareBracketsOuter",
+        "key": "alt+s ]",
+        "when": "editorFocus"
+      },
+      {
+        "command": "extension.selectCurlyBracketsOuter",
+        "key": "alt+s shift+]",
+        "when": "editorFocus"
+      },
+      {
+        "command": "extension.selectAngleBrackets",
+        "key": "alt+s shift+,",
+        "when": "editorFocus"
+      },
+      {
+        "command": "extension.selectInTag",
+        "key": "alt+s shift+.",
+        "when": "editorFocus"
+      }
     ]
   },
   "scripts": {
