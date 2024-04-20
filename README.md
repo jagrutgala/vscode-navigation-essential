@@ -1,71 +1,76 @@
-# navigation-essential README
+# Navigation Essentials (navigation-essentials) Extension for Visual Studio Code
 
-This is the README for your extension "navigation-essential". After writing up a brief description, we recommend including the following sections.
+Welcome to the README for the Navigation Essentials (navigation-essentials) extension! This extension enhances your vscode editing experience by providing handy shortcuts and very quality of life in vscode features.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+It combines feature of **vscode-quick-select** & **quick-open-prefill-selection**
 
-For example if there is an image subfolder under your extension project workspace:
+## Extension Keybindings
 
-\!\[feature X\]\(images/feature-x.png\)
+| Command                                         | Keybinding      |
+| ----------------------------------------------- | --------------- |
+| explorer.newFile                                | alt+f n         |
+| explorer.newFolder                              | alt+f shift+n   |
+| workbench.action.focusActiveEditorGroup         | enter           |
+| toggleSearchCaseSensitive                       | alt+f c         |
+| toggleSearchWholeWord                           | alt+f w         |
+| toggleSearchRegex                               | alt+f r         |
+| toggleSearchPreserveCase                        | alt+f p         |
+| toggleSearchEditorCaseSensitive                 | alt+f c         |
+| toggleSearchEditorWholeWord                     | alt+f w         |
+| toggleSearchEditorRegex                         | alt+f r         |
+| editor.action.addSelectionToNextFindMatch       | alt+l           |
+| editor.action.addSelectionToPreviousFindMatch   | shift+alt+l     |
+| editor.action.jumpToBracket                     | alt+g oem_4     |
+| editor.action.jumpToBracket                     | alt+g oem_6     |
+| editor.action.deleteLines                       | shift+delete    |
+| deleteInsideWord                                | alt+x           |
+| workbench.action.toggleMaximizedPanel           | ctrl+shift+6    |
+| workbench.action.nextPanelView                  | alt+j n         |
+| workbench.action.previousPanelView              | alt+j p         |
+| workbench.action.terminal.kill                  | alt+t w         |
+| workbench.action.terminal.resizePaneDown        | alt+t alt+d     |
+| workbench.action.terminal.resizePaneUp          | alt+t alt+u     |
+| workbench.action.terminal.clear                 | alt+t c         |
+| terminal.split                                  | alt+t oem_5     |
+| workbench.action.terminal.moveToEditor          | alt+t + shift+e |
+| workbench.action.terminal.moveToTerminalPanel   | alt+t + shift+p |
+| editor.emmet.action.wrapWithAbbreviation        | alt+e w         |
+| editor.emmet.action.incrementNumberByOne        | alt+e oem_plus  |
+| editor.emmet.action.decrementNumberByOne        | alt+e oem_minus |
+| editor.emmet.action.balanceIn                   | alt+e i         |
+| editor.emmet.action.balanceOut                  | alt+e o         |
+| editor.emmet.action.matchTag                    | alt+e p         |
+| editor.emmet.action.removeTag                   | alt+e x         |
+| navigation-essentials.selectSingleQuote         | alt+s '         |
+| navigation-essentials.selectDoubleQuote         | alt+s shift+'   |
+| navigation-essentials.selectEitherQuote         | alt+s ;         |
+| navigation-essentials.switchQuotes              | alt+s shift+;   |
+| navigation-essentials.selectParenthesis         | alt+s shift+9   |
+| navigation-essentials.selectBackTick            | alt+s `         |
+| navigation-essentials.selectSquareBrackets      | alt+s [         |
+| navigation-essentials.selectCurlyBrackets       | alt+s shift+[   |
+| navigation-essentials.selectParenthesisOuter    | alt+s shift+0   |
+| navigation-essentials.selectSquareBracketsOuter | alt+s ]         |
+| navigation-essentials.selectCurlyBracketsOuter  | alt+s shift+]   |
+| navigation-essentials.selectAngleBrackets       | alt+s shift+,   |
+| navigation-essentials.selectInTag               | alt+s shift+.   |
+| navigation-essentials.quickOpenPrefill          | ctrl+p          |
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
 
-## Requirements
+## Feedback and Contributions
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+If you have any feedback, suggestions, or encounter any issues with the Navigation Essentials extension, please feel free to open an issue on our [GitHub repository](https://github.com/jagrutgala/vscode-navigation-essential).
 
-## Extension Settings
+We welcome contributions! If you'd like to contribute to the development of this extension, please check out our [contribution guidelines](https://github.com/jagrutgala/vscode-navigation-essential/blob/main/CONTRIBUTING.md).
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+## License
 
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
+This extension is licensed under the [MIT License](https://github.com/jagrutgala/vscode-navigation-essential/blob/main/LICENSE.md).
 
 ---
 
-## Following extension guidelines
+Thank you for using the Navigation Essentials extension! We hope it enhances your experience in Visual Studio Code.
 
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+**Enjoy! :)**
