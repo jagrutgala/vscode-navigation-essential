@@ -68,67 +68,255 @@
     ],
     "keybindings": [
       {
-        "command": "extension.selectSingleQuote",
+        "command": "explorer.newFile",
+        "key": "alt+f n",
+        "when": "explorerViewletFocus"
+      },
+      {
+        "command": "explorer.newFolder",
+        "key": "alt+f shift+n",
+        "when": "explorerViewletFocus"
+      },
+      {
+        "key": "enter",
+        "command": "-editor.action.nextMatchFindAction",
+        "when": "editorFocus && findInputFocussed"
+      },
+      {
+        "key": "shift+enter",
+        "command": "-editor.action.previousMatchFindAction",
+        "when": "editorFocus && findInputFocussed"
+      },
+      {
+        "key": "enter",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "editorFocus && findInputFocussed"
+      },
+      {
+        "command": "toggleSearchCaseSensitive",
+        "key": "alt+f c",
+        "when": "editorFocus"
+      },
+      {
+        "command": "toggleSearchWholeWord",
+        "key": "alt+f w",
+        "when": "editorFocus"
+      },
+      {
+        "command": "toggleSearchRegex",
+        "key": "alt+f r",
+        "when": "editorFocus"
+      },
+      {
+        "command": "toggleSearchPreserveCase",
+        "key": "alt+f p",
+        "when": "editorFocus"
+      },
+      {
+        "command": "toggleSearchEditorCaseSensitive",
+        "key": "alt+f c",
+        "when": "inSearchEditor && searchInputBoxFocus"
+      },
+      {
+        "command": "toggleSearchEditorWholeWord",
+        "key": "alt+f w",
+        "when": "inSearchEditor && searchInputBoxFocus"
+      },
+      {
+        "command": "toggleSearchEditorRegex",
+        "key": "alt+f r",
+        "when": "inSearchEditor && searchInputBoxFocus"
+      },
+      {
+        "key": "alt+l",
+        "command": "editor.action.addSelectionToNextFindMatch",
+        "when": "editorFocus"
+      },
+      {
+        "key": "ctrl+d",
+        "command": "-editor.action.addSelectionToNextFindMatch",
+        "when": "editorFocus"
+      },
+      {
+        "key": "shift+alt+l",
+        "command": "editor.action.addSelectionToPreviousFindMatch"
+      },
+      {
+        "key": "alt+g oem_4",
+        "command": "editor.action.jumpToBracket",
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "alt+g oem_6",
+        "command": "editor.action.jumpToBracket",
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "ctrl+shift+w",
+        "command": "-workbench.action.closeWindow"
+      },
+      {
+        "key": "shift+delete",
+        "command": "-editor.action.clipboardCutAction"
+      },
+      {
+        "key": "shift+delete",
+        "command": "editor.action.deleteLines",
+        "when": "textInputFocus && !editorReadonly"
+      },
+      {
+        "key": "alt+x",
+        "command": "deleteInsideWord"
+      },
+      {
+        "key": "ctrl+shift+k",
+        "command": "-editor.action.deleteLines",
+        "when": "textInputFocus && !editorReadonly"
+      },
+      {
+        "key": "ctrl+e",
+        "command": "-workbench.action.quickOpen"
+      },
+      {
+        "key": "ctrl+shift+6",
+        "command": "workbench.action.toggleMaximizedPanel",
+        "when": "panelFocus"
+      },
+      {
+        "key": "alt+j n",
+        "command": "workbench.action.nextPanelView",
+        "when": "panelFocus"
+      },
+      {
+        "key": "alt+j p",
+        "command": "workbench.action.previousPanelView",
+        "when": "panelFocus"
+      },
+      {
+        "key": "alt+t w",
+        "command": "workbench.action.terminal.kill",
+        "when": "terminalFocus"
+      },
+      {
+        "key": "alt+t alt+d",
+        "command": "workbench.action.terminal.resizePaneDown",
+        "when": "terminalFocus"
+      },
+      {
+        "key": "alt+t alt+u",
+        "command": "workbench.action.terminal.resizePaneUp",
+        "when": "terminalFocus"
+      },
+      {
+        "key": "alt+t c",
+        "command": "workbench.action.terminal.clear",
+        "when": "terminalFocus"
+      },
+      {
+        "key": "alt+t oem_5",
+        "command": "terminal.split",
+        "when": "terminalFocus"
+      },
+      {
+        "command": "workbench.action.terminal.moveToEditor",
+        "key": "alt+t + shift+e",
+        "when": "terminalFocus"
+      },
+      {
+        "command": "workbench.action.terminal.moveToTerminalPanel",
+        "key": "alt+t + shift+p",
+        "when": "terminalFocus"
+      },
+      {
+        "key": "alt+e w",
+        "command": "editor.emmet.action.wrapWithAbbreviation"
+      },
+      {
+        "key": "alt+e oem_plus",
+        "command": "editor.emmet.action.incrementNumberByOne"
+      },
+      {
+        "key": "alt+e oem_minus",
+        "command": "editor.emmet.action.decrementNumberByOne"
+      },
+      {
+        "key": "alt+e i",
+        "command": "editor.emmet.action.balanceIn"
+      },
+      {
+        "key": "alt+e o",
+        "command": "editor.emmet.action.balanceOut"
+      },
+      {
+        "key": "alt+e p",
+        "command": "editor.emmet.action.matchTag"
+      },
+      {
+        "key": "alt+e x",
+        "command": "editor.emmet.action.removeTag"
+      },
+      {
+        "command": "navigation-essentials.selectSingleQuote",
         "key": "alt+s '",
         "when": "editorFocus"
       },
       {
-        "command": "extension.selectDoubleQuote",
+        "command": "navigation-essentials.selectDoubleQuote",
         "key": "alt+s shift+'",
         "when": "editorFocus"
       },
       {
-        "command": "extension.selectEitherQuote",
+        "command": "navigation-essentials.selectEitherQuote",
         "key": "alt+s ;",
         "when": "editorFocus"
       },
       {
-        "command": "extension.switchQuotes",
+        "command": "navigation-essentials.switchQuotes",
         "key": "alt+s shift+;",
         "when": "editorFocus"
       },
       {
-        "command": "extension.selectParenthesis",
+        "command": "navigation-essentials.selectParenthesis",
         "key": "alt+s shift+9",
         "when": "editorFocus"
       },
       {
-        "command": "extension.selectBackTick",
+        "command": "navigation-essentials.selectBackTick",
         "key": "alt+s `",
         "when": "editorFocus"
       },
       {
-        "command": "extension.selectSquareBrackets",
+        "command": "navigation-essentials.selectSquareBrackets",
         "key": "alt+s [",
         "when": "editorFocus"
       },
       {
-        "command": "extension.selectCurlyBrackets",
+        "command": "navigation-essentials.selectCurlyBrackets",
         "key": "alt+s shift+[",
         "when": "editorFocus"
       },
       {
-        "command": "extension.selectParenthesisOuter",
+        "command": "navigation-essentials.selectParenthesisOuter",
         "key": "alt+s shift+0",
         "when": "editorFocus"
       },
       {
-        "command": "extension.selectSquareBracketsOuter",
+        "command": "navigation-essentials.selectSquareBracketsOuter",
         "key": "alt+s ]",
         "when": "editorFocus"
       },
       {
-        "command": "extension.selectCurlyBracketsOuter",
+        "command": "navigation-essentials.selectCurlyBracketsOuter",
         "key": "alt+s shift+]",
         "when": "editorFocus"
       },
       {
-        "command": "extension.selectAngleBrackets",
+        "command": "navigation-essentials.selectAngleBrackets",
         "key": "alt+s shift+,",
         "when": "editorFocus"
       },
       {
-        "command": "extension.selectInTag",
+        "command": "navigation-essentials.selectInTag",
         "key": "alt+s shift+.",
         "when": "editorFocus"
       }
