@@ -3,6 +3,9 @@
   "displayName": "Vscode Navigation Essentials",
   "description": "",
   "version": "1.0.0",
+  "repository": {
+    "url": "https://github.com/jagrutgala/navigation-essential"
+  },
   "engines": {
     "vscode": "^1.8.0"
   },
