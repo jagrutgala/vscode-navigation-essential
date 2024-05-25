@@ -271,6 +271,14 @@
         "command": "editor.emmet.action.removeTag"
       },
       {
+        "command": "workbench.action.moveEditorToNewWindow",
+        "key": "alt+e n"
+      },
+      {
+        "command": "workbench.action.toggleMaximizeEditorGroup",
+        "key": "alt+e m"
+      },
+      {
         "command": "navigation-essentials.selectSingleQuote",
         "key": "alt+s '",
         "when": "editorFocus"
