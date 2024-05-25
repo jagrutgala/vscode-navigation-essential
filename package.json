@@ -6,6 +6,7 @@
   "repository": {
     "url": "https://github.com/jagrutgala/navigation-essential"
   },
+  "publisher": "jagrutgala",
   "engines": {
     "vscode": "^1.8.0"
   },
