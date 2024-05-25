@@ -71,6 +71,14 @@
       {
         "command": "navigation-essentials.quickOpenPrefill",
         "title": "Open quick open prefilled with selected text"
+      },
+      {
+        "command": "navigation-essentials.changeLanguageToJson",
+        "title": "Change Language To Json"
+      },
+      {
+        "command": "navigation-essentials.changeLanguageToJsonC",
+        "title": "Change Language To Json Comments"
       }
     ],
     "keybindings": [
@@ -331,6 +339,14 @@
         "command": "navigation-essentials.quickOpenPrefill",
         "key": "ctrl+p",
         "when": "editorTextFocus && editorHasSelection && !editorHasMultipleSelections"
+      },
+      {
+        "command": "navigation-essentials.changeLanguageToJson",
+        "key": "ctrl+shift+k j"
+      },
+      {
+        "command": "navigation-essentials.changeLanguageToJsonC",
+        "key": "ctrl+shift+k shift+j"
       }
     ]
   },
