@@ -240,14 +240,14 @@ export function matchingSelect({ start_char, end_char, outer = false }: Matching
     let ends = findOccurrences(doc, line, end_char);
     let start = starts.find((a) => a > character);
     let end = ends.find((a) => a > character);
-    if (start === undefined || start === null) {
-      return s;
-    }
-    if (end === undefined || end === null) {
-      return s;
-    }
-    let start_index = starts.indexOf(start);
-    let end_index = ends.indexOf(end);
+    // if (start === undefined || start === null) {
+    //   return s;
+    // }
+    // if (end === undefined || end === null) {
+    //   return s;
+    // }
+    let start_index = starts.indexOf(start ?? 0);
+    let end_index = ends.indexOf(end ?? 0);
     let start_pos: vscode.Position =
       findPrevious(doc, line, start_char, character, end_char) || new vscode.Position(line, starts[start_index]);
     if (!start_pos) {
