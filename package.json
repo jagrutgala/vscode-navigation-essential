@@ -12,6 +12,7 @@
   "categories": [
     "Other"
   ],
+  "browser": "./out/extension.js",
   "activationEvents": [],
   "main": "./out/extension.js",
   "contributes": {
