@@ -10,6 +10,7 @@
 			"type": "extensionHost",
 			"request": "launch",
 			"args": [
+				"--profile=\"Empty-Profile\"",
 				"--extensionDevelopmentPath=${workspaceFolder}"
 			],
 			"outFiles": [

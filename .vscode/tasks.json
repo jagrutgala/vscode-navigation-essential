@@ -4,9 +4,10 @@
     "version": "2.0.0",
     "tasks": [
         {
+            "label": "Run project",
             "type": "npm",
             "script": "watch",
-            "problemMatcher": "$tsc-watch",
+            "problemMatcher": "$ts-webpack-watch",
             "isBackground": true,
             "presentation": {
                 "reveal": "never"
@@ -17,10 +18,24 @@
             }
         },
         {
+            "label": "Build project",
+            "type": "npm",
+            "script": "compile",
+            "problemMatcher": [],
+            "isBackground": true,
+            "presentation": {
+                "reveal": "never"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            }
+        },
+        {
             "label": "Package project",
             "type": "shell",
             "command": "mkdir -p ./dist; vsce package -o ./dist",
-            "dependsOn": "",
+            "dependsOn": ["Build project"],
             "group": {
                 "kind": "build",
                 "isDefault": false

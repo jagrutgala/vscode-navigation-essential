@@ -2,7 +2,7 @@
   "name": "navigation-essentials",
   "displayName": "Vscode Navigation Essentials",
   "description": "",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "repository": {
     "url": "https://github.com/jagrutgala/navigation-essential"
   },
@@ -13,8 +13,8 @@
   "categories": [
     "Other"
   ],
-  "browser": "./out/extension.js",
   "activationEvents": [],
+  "browser": "./out/extension.js",
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
@@ -110,24 +110,44 @@
         "when": "editorFocus && findInputFocussed"
       },
       {
-        "command": "toggleSearchCaseSensitive",
+        "command": "toggleFindCaseSensitive",
         "key": "alt+f c",
         "when": "editorFocus"
       },
       {
-        "command": "toggleSearchWholeWord",
+        "command": "toggleFindWholeWord",
         "key": "alt+f w",
         "when": "editorFocus"
       },
       {
-        "command": "toggleSearchRegex",
+        "command": "toggleFindRegex",
         "key": "alt+f r",
         "when": "editorFocus"
       },
       {
+        "command": "toggleFindInSelection",
+        "key": "alt+f s",
+        "when": "editorFocus"
+      },
+      {
+        "command": "toggleSearchCaseSensitive",
+        "key": "alt+f c",
+        "when": "searchViewletFocus"
+      },
+      {
+        "command": "toggleSearchWholeWord",
+        "key": "alt+f w",
+        "when": "searchViewletFocus"
+      },
+      {
+        "command": "toggleSearchRegex",
+        "key": "alt+f r",
+        "when": "searchViewletFocus"
+      },
+      {
         "command": "toggleSearchPreserveCase",
         "key": "alt+f p",
-        "when": "editorFocus"
+        "when": "searchViewletFocus"
       },
       {
         "command": "toggleSearchEditorCaseSensitive",
@@ -362,21 +382,27 @@
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
-    "compile": "tsc -p ./",
-    "watch": "tsc -watch -p ./",
+    "compile": "webpack",
+    "watch": "webpack --watch",
+    "compile::prod": "webpack --mode production --devtool hidden-source-map",
     "pretest": "npm run compile && npm run lint",
     "lint": "eslint src --ext ts",
     "test": "vscode-test"
   },
   "devDependencies": {
-    "@types/vscode": "^1.8.0",
     "@types/mocha": "^10.0.6",
     "@types/node": "18.x",
+    "@types/vscode": "^1.8.0",
+    "@types/webpack-env": "^1.18.5",
     "@typescript-eslint/eslint-plugin": "^7.4.0",
     "@typescript-eslint/parser": "^7.4.0",
-    "eslint": "^8.57.0",
-    "typescript": "^5.3.3",
     "@vscode/test-cli": "^0.0.8",
-    "@vscode/test-electron": "^2.3.9"
+    "@vscode/test-electron": "^2.3.9",
+    "eslint": "^8.57.0",
+    "process": "^0.11.10",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.3.3",
+    "webpack": "^5.94.0",
+    "webpack-cli": "^5.1.4"
   }
 }
