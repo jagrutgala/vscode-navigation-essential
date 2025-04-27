@@ -2,7 +2,7 @@
   "name": "navigation-essentials",
   "displayName": "Vscode Navigation Essentials",
   "description": "",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "repository": {
     "url": "https://github.com/jagrutgala/navigation-essential"
   },
@@ -165,7 +165,7 @@
         "when": "inSearchEditor && searchInputBoxFocus"
       },
       {
-        "key": "alt+l",
+        "key": "alt+d",
         "command": "editor.action.addSelectionToNextFindMatch",
         "when": "editorFocus"
       },
@@ -175,7 +175,7 @@
         "when": "editorFocus"
       },
       {
-        "key": "shift+alt+l",
+        "key": "shift+alt+d",
         "command": "editor.action.addSelectionToPreviousFindMatch"
       },
       {
